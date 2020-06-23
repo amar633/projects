@@ -1,0 +1,8 @@
+read(3, "called\nSin", 10)              = 10
+write(4, "called\nSin", 10)             = 10
+read(3, ", calling ", 10)               = 10
+write(4, ", calling ", 10)              = 10
+read(3, " I called ", 10)               = 10
+write(4, " I called ", 10)              = 10
+read(3, " calling o", 10)               = 10
+write(4, " calling o", 10)              = 10

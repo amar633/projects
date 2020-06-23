@@ -1,0 +1,22 @@
+Write a multithreaded C program that calculates various statistical values for a list of numbers. This program will be passed a 
+series of numbers on the command and will then create three separate worker threads. (Another option to generate the input
+numbers: you can get the total number from the user (n) and then generate n random numbers between [1-100] ). One thread 
+will determine the average of the numbers, the second will determine the maximum value, and the third will determine the 
+minimum value. For example, suppose your program is passed the integers:
+
+90 81 78 95 79 72 85
+The program will report
+The average value is 82
+The minimum value is 72
+The maximum value is 95
+
+The variables representing the average, minimum, and maximum values will be stored globally. The worker threads will set 
+these values, and the parent thread will output the values once the workers have exited. (We could obviously expand this 
+program by creating additional that determine other statistical values, such as median and standard deviation.)
+
+Save your code as Lab3.c and submit (in Canvas) source code (.c) file with all the related files, including the exe file. Also, make 
+sure to provide a picture from the output of your Lab 3.c execution. You can put all the files in a folder, zip the folder, and upload
+it via Canvas.
+
+Source:
+https://www.youtube.com/watch?v=QbFM0YroaF0

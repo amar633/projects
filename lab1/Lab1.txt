@@ -1,0 +1,31 @@
+Write a program (named FileCopy) that copies the contents of one file to a destination file. This program works by first prompting the user for the name of the source and destination files. Write C program using the POSIX API, except that it obtains the file names from the command line: FileCopy source destination.
+Be sure to include all necessary error checking, including ensuring that the source file exists. Also, be sure to close the input and output files when the program completes.
+Once you have correctly designed and tested the program, run the program using a utility that traces system calls. For example, Linux systems provide the strace utility for tracing system calls, and macOS systems use the dtruss command. (The dtruss command, which actually is a front end to dtrace, requires admin privileges, so it must be run using sudo). If the executable file is called FileCopy, the strace command is invoked as follows:
+
+Linux: strace ./FileCopy
+macOS: sudo dtruss ./FileCopy
+
+Next, answer the following questions (this will require carefully examining the output of system calls):
+
+ What system call or calls correspond to opening the source and destination files?
+ What system call or calls correspond to reading the source file and writing the destination file?
+ What system call or calls correspond to closing the source and destination files?
+
+Assignment Submission:
+
+ Assignment deliverables must be submitted in the appropriate “Assignments” area on Canvas by the due date.
+ All executable programs and object files must be included.
+ “ZIP” the collection of all files into a single file using WinZip or RAR format.
+ Name the ZIP file Lab1_UserName.zip (or .rar) [UserName meaning your CSUN User ID- example: Lab1_mebrahimi]
+
+Submit EVERYTHING EVERY TIME:
+
+With each submission, including the current version of all work products to-date, even if incomplete, even if un-changed. This includes:
+
+ A text file answering the questions above
+ Source Code
+ Executable program
+ Entire software project files if you use any IDE
+ Picture files that show you successfully compile your C program as well as the result of the trace command.
+
+Software Project files (example: if MS Visual Studio is used, include the ENTIRE project folder containing all project files – such as .vcxproj.)

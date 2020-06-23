@@ -1,0 +1,163 @@
+his lab will look more deeply at processes and multi-processing.
+
+Linux provides several facilities for implementing a program that allows concurrent (parallel) processing of data. The simplest facility is the fork() system call. Read about this call in man fork.
+
+The fork() system call is defined in the header files <sys/types.h> and <unistd.h>. It creates an additional process. The created process is referred to as the child, and the process that called fork() is referred to as the parent. These two processes are identical copies of one another, except for their process ID (PID). We have seen this using the top command. Following the execution of the fork() call, both processes resume execution and the next instruction.
+
+The child has copies of ALL variables that were declared in the parent. The values of these variables are the same as their values in the parent at the time of the fork(). The processes also share the same file handles. While the file handles are copies of the originals, the resource that they point to remains the same. This introduces the problem of process synchronization. The results of two or more processes accessing the same resource simultaneously are unpredictable. Part of process synchronization deals with ensuring that this does not occur. This will be discussed in detail in the next chapters.
+
+A process is also allowed to load the program into its memory space, overwriting the original program it was executing. This is typically used in conjunction with fork() to spawn a process to execute an external program whose return value and/or output the parent is interested in. This functionality is achieved by using the exec() calls. The most common example of this is your terminal shell. When you execute a program, your shell forks a new copy of itself and passes the command line you entered to the child. The child then locates the program you specified and issues an exec call to load it into its memory and passes the remainder of the command line you entered as arguments to the new program.
+
+Steps:
+
+1.     Read and try the codes in https://www.geeksforgeeks.org/fork-system-call/ (Links to an external site.)
+
+2.    Save the following code as fork1.c
+
+//fork1.c
+
+#include <stdio.h>
+
+#include <sys/types.h>
+
+#include <sys/wait.h>
+
+#include <stdlib.h>
+
+int main()
+
+{
+
+  const int BASE_PROCESSES = 3;
+
+  int i, j;
+
+  for(i = 0; i < BASE_PROCESSES; i++)
+
+  {
+
+      j = fork();
+
+      if(j == 0)
+
+      {
+
+          printf("%s %d", "My ppid is ", getppid());
+
+          printf("%s %d.\n", " and my pid is ", getpid());
+
+          sleep(2);
+
+      }
+
+      else
+
+        wait(&j);
+
+  }
+
+  return (0);
+
+}
+
+Compile this code with fork1.c -o fork1. Then run it with ./fork1 while watching what is happening in the top session window.
+
+A) Read the above code and try to understand what is happening on each line. You may want to reread man fork and you may want to visit info wait.
+
+B) The exec family of functions replaces the current process image with a new process image. The functions described in this manual page are front-ends for the function execve(2). See the manual page for execve and execlp for detailed information about the replacement of the current process.
+
+ 
+
+3. The final example is based on the code from fig 4.8 of "Operating System Concepts"
+
+     //fork2.c
+
+     #include <stdio.h>
+
+     int main()
+
+     {
+
+            int pid;
+
+            /* fork another process */
+
+            pid = fork();
+
+            if (pid < 0)
+
+            {
+
+                    /* error occurred */
+
+                    printf("Fork Failed\n");
+
+                    exit(-1);
+
+            }
+
+            else if (pid == 0)
+
+            {
+
+                    /* child process */
+
+                    execlp("/bin/ls","ls",NULL);
+
+            }
+
+            else
+
+            {
+
+                    /* parent process */
+
+                    /* parent will wait for the child to complete */
+
+                    wait();
+
+                   
+
+                    printf("Child Complete\n");
+
+                    exit(0);
+
+            }
+
+            return 0;
+
+     }
+
+ 
+
+Save this code as fork2.c. Then compile and run it. Again, try to understand each line of this code.
+ubunuggglflflflfuuuuuuurtpot[oj
+e[pky[kpzpk44		uuuu
+
+On the UNIX-like system, you can obtain a listing of processes by using the ps command.  For example, the command    
+
+                                         ps -el
+
+will list complete information for all processes currently active in the system.
+
+ 
+
+Problem:
+
+Your task is to create a multi-processing "Hello World" program. Your program should:
+
+·         Have one parent process that spawns all the children.
+
+·         This parent should be good for its children and wait() for all of them to finish executing.
+
+·         Each child should identify itself with an integer value, ranging from one to however many processes you spawn, corresponding to 1st process, 2nd process, etc. (Note: this should not be the same as the pid.)
+
+·         Each child should then print to screen the text "Hello World!", as well as its integer ID (ex. "Hello World from child 1")
+
+·         Your program should be able to spawn any reasonable number of processes and this number should be determined by the user.
+
+·         Unlike the code examples written above (that were designed and written for you to figure them out), be sure to include good documentation in your code. This means to include a comment header block as well as in-line comments.
+
+·         Save your code as Lab2.c and submit it with a pic of the executions.
+
+ 

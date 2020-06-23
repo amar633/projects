@@ -1,0 +1,622 @@
+    1  history 
+    2  ls
+    3  cd..
+    4  ls -a
+    5  history
+    6  cd /proc/cdinfo
+    7  dir
+    8  ls
+    9  more /proc/cpuinfo
+   10  man meminfo
+   11  man proc
+   12  man proc > proc.txt
+   13  more proc.txt
+   14  search
+   15  man search
+   16  man find
+   17  vedit 
+   18  edit proc.txt
+   19  more /proc/cpuinfo > cpuinfo.txt
+   20  edit cpuinfo.txt 
+   21  lscpu
+   22  lscpu > lscpu.txt
+   23  edit lscpu.txt 
+   24  man ls
+   25  ls -L
+   26  ls -l
+   27  ls /*.pid
+   28  ls /*.txt
+   29  more /proc/cpuinfo
+   30  cls
+   31  ccleaar
+   32  clear
+   33  more /proc/cpuinfo
+   34  psinfo -p
+   35  more /proc/cpuinfo > cpuinfo.txt
+   36  vi cpuinfo.txt 
+   37  dmidecode
+   38  more /proc/cpuinfo
+   39  more /proc/cpuinfo | grep core
+   40  lscpu | grep core
+   41  lscpu
+   42  lscpu | grep [Cc]ore
+   43  more /proc/cpuinfo
+   44  lscpu 
+   45  more /proc/cpuinfo
+   46  lscpu 
+   47  /proc/cpuinfo grep "socket"
+   48  more /proc/cpuinfo grep "socket"
+   49  git
+   50  sudo apt install git
+   51  git https://github.com/uu-os-2018/address-book.git
+   52  git
+   53  git help
+   54  git help git
+   55  git --https://github.com/uu-os-2018/address-book.git
+   56  git --html-path https://github.com/uu-os-2018/address-book.git
+   57  ls
+   58  git https://github.com/uu-os-2018/address-book.git
+   59  ls
+   60  rm *.txt
+   61  ls
+   62  clear
+   63  mkdir projects
+   64  cd projects
+   65  ls
+   66  edit main.c
+   67  ls
+   68  ls -a
+   69  mkdir address-book
+   70  cd address-book/
+   71  ls
+   72  mv address_book.c.txt address_book.c
+   73  ls
+   74  mv address_book.h.txt address_book.h
+   75  ls
+   76  mv adress_book.h.txt address_book.h
+   77  ls
+   78  mv main.c.txt main.c
+   79  ls
+   80  mv makefile.odt makwfile
+   81  ls
+   82  make
+   83  ls
+   84  mv makwfile makefile
+   85  ls
+   86  make
+   87  ls
+   88  clear
+   89  ls
+   90  gcc main.c address_book.h address_book.c 
+   91  clear
+   92  gcc main.c address_book.h address_book.c  -o addressbook.o
+   93  ls
+   94  more address_book.c
+   95  more address_book.h
+   96  ls
+   97  more main.c 
+   98  more makefile 
+   99  ls
+  100  edit makefile
+  101  vi makefile
+  102  cd projects/
+  103  cd address-book/
+  104  ls
+  105  rm a*
+  106  ls
+  107  rm mai*
+  108  ls
+  109  make
+  110  ls
+  111  mv makefile.mak makefile
+  112  ls
+  113  make
+  114  ls
+  115  make
+  116  ls
+  117  clear
+  118  make
+  119  clear
+  120  make
+  121  clear
+  122  make
+  123  clear
+  124  make
+  125  clear
+  126  make
+  127  clear
+  128  make
+  129  clear
+  130  make
+  131  clear
+  132  make
+  133  clear
+  134  make
+  135  ls
+  136  more main.c 
+  137  more address_book.h
+  138  clear
+  139  make
+  140  more main.c
+  141  clear
+  142  make
+  143  clear
+  144  make
+  145  clear
+  146  make
+  147  clear
+  148  make
+  149  clear
+  150  make
+  151  clear
+  152  make
+  153  clear
+  154  make
+  155  clear
+  156  make
+  157  more address_book.h
+  158  clear
+  159  make
+  160  clear
+  161  make
+  162  clear
+  163  make
+  164  clear
+  165  make
+  166  more address_book.h
+  167  clear
+  168  make
+  169  clear
+  170  make
+  171  more address_book.h
+  172  clear
+  173  make
+  174  more address_book.h
+  175  clear
+  176  make
+  177  clear
+  178  make
+  179  clear
+  180  make
+  181  clear
+  182  make
+  183  clear
+  184  make
+  185  clear
+  186  make
+  187  clear
+  188  make
+  189  clear
+  190  make
+  191  vi address_book.c
+  192  clear
+  193  make
+  194  clear
+  195  make
+  196  clear
+  197  make
+  198  more address_book.h
+  199  more address_book.c
+  200  clear
+  201  make
+  202  clear
+  203  make
+  204  clear
+  205  make
+  206  clear
+  207  make
+  208  clear
+  209  make
+  210  clear
+  211  make
+  212  clear
+  213  make
+  214  clear
+  215  make
+  216  clear
+  217  make
+  218  clear
+  219  make
+  220  clear
+  221  make
+  222  clear
+  223  make
+  224  clear
+  225  make
+  226  clear
+  227  make
+  228  cd ..
+  229  dir
+  230  ls
+  231  cd..
+  232  cd ..
+  233  ls
+  234  cd ubuntu
+  235  ls
+  236  cd projects/
+  237  cd address-book/
+  238  ls
+  239  address_book.o
+  240  more makefile
+  241  clear
+  242  make
+  243  ls
+  244  clear
+  245  ls
+  246  make
+  247  ls
+  248  rm adb
+  249  rm addb
+  250  rm address_book11
+  251  ls
+  252  clear
+  253  make
+  254  ls
+  255  adb
+  256  mv adb adb.exe
+  257  adb
+  258  cd projects/
+  259  cd address-book/
+  260  ls
+  261  rm main.o
+  262  ls
+  263  /home/ubuntu/projects/address-book/main.c
+  264  man rar
+  265  man zip
+  266  cd projects/
+  267  ls
+  268  cd copyfile/
+  269  ls8
+  270  zip beqradjAli lab_1
+  271  zip beqradjAli lab_1/*.*
+  272  ls
+  273  cd ..
+  274  ls
+  275  cd copyfile/
+  276  ls
+  277  cd lab_1
+  278  ls
+  279  cd ..
+  280  mkdir lab1
+  281  mkdir lab2
+  282  mv /copyfile/lab_1/*.*
+  283  mv /copyfile/lab_1/*.* /lab1
+  284  ls
+  285  mv copyfile/lab_1/*.* /lab1
+  286  mv /copyfile/lab_1/*.* /projects/lab1
+  287  mv copyfile/lab_1/*.* /projects/lab1
+  288  man mv | grep example
+  289  man mv 
+  290  man mv
+  291  cd copyfile/
+  292  cd lab_1
+  293  dir
+  294  ls
+  295  clear
+  296  ls
+  297  mv *.* ../../lab1
+  298  ls
+  299  cd ..
+  300  cd lab1
+  301  ls
+  302  cd ..
+  303  cd lab2
+  304  ls
+  305  mv lab2txt lab2.txt
+  306  ls
+  307  mv fork.c fork1.c
+  308  ls
+  309  cd projects
+  310  ls
+  311  cd lab2
+  312  L
+  313  LS
+  314  ls
+  315  gcc -o a.out lab2.txt
+  316  gcc -o a.out lab2.c
+  317  clear
+  318  ls
+  319  more lab2.c
+  320  clear
+  321  gcc -o a.out lab2.c
+  322  ./a.out
+  323  gcc -o a.out lab2.c
+  324  clear
+  325  gcc -o a.out lab2.c
+  326  clear
+  327  ./a.out
+  328  clear
+  329  ls
+  330  gcc -o a.out example.c
+  331  clear
+  332  ./a.out
+  333  gcc -o a.out example.c
+  334  clear
+  335  gcc -o a.out example.c
+  336  ./a.out
+  337  clear
+  338  gcc -o a.out example.c
+  339  ./a.out
+  340  clear
+  341  ./a.out
+  342  clear
+  343  ./a.out
+  344  clear
+  345  gcc -o a.out example.c
+  346  ./a.out
+  347  gcc -o a.out example.c
+  348  clear
+  349  gcc -o a.out example.c
+  350  ./a.out
+  351  gcc -o a.out example.c
+  352  clear
+  353  gcc -o a.out example.c
+  354  ./a.out
+  355  gcc -o a.out example.c
+  356  ./a.out
+  357  clear
+  358  ./a.out
+  359  clear
+  360  gcc -o a.out example.c
+  361  ./a.out
+  362  clear
+  363  gcc -o a.out example.c
+  364  ./a.out
+  365  gcc -o a.out lab2.c
+  366  ./a.out
+  367  clear
+  368  ./a.out
+  369  clear
+  370  gcc -o a.out example.c
+  371  ./a.out
+  372  cp example.c lab2.c
+  373  gcc -o a.out lab2.c
+  374  ./a.out
+  375  clear
+  376  ./a.out
+  377  clear
+  378  gcc -o a.out lab2.c
+  379  ./a.out
+  380  ls
+  381  more fotk1.out
+  382  fotk1.out
+  383  ./fotk1.out
+  384  rm fotk*
+  385  ls
+  386  clear
+  387  gcc -o a.out lab2.c
+  388  ./a.out
+  389  ls
+  390  cd projects/
+  391  ls
+  392  gcc -o a.out ass2.c
+  393  man getpid
+  394  gcc -o a.out ass2.c
+  395  ./a.out
+  396  gcc -o a.out ass2.c
+  397  clear
+  398  gcc -o a.out ass2.c
+  399  ./a.out
+  400  gcc -o a.out ass2.c
+  401  clear
+  402  ./a.out
+  403  clear
+  404  ./a.out
+  405  clear
+  406  ls
+  407  clear
+  408  ls
+  409  date
+  410  date -s "June 13 2020 10:13 AM PCT"
+  411  date -s "June 13 2020 10:13"
+  412  ./date -s "June 13 2020 10:13"
+  413  sudo date -s "June 13 2020 10:13"
+  414  sudo date -s "June 13 2020 10:17"
+  415  cd projects/
+  416  ls
+  417  cd lab3
+  418  ls
+  419  gcc -pthread -o a.out lab3-draft-1.c
+  420  ./a.out
+  421  gcc -pthread -o a.out lab3-draft-1.c
+  422  ./a.out
+  423  gcc -pthread -o a.out lab3-draft-1.c
+  424  ./a.out
+  425  clear
+  426  more lab3-draft-1.c
+  427  gcc -o a.out lab3-draft-1.c
+  428  gcc -pthreads -o a.out lab3-draft-1.c
+  429  gcc -pthread -o a.out lab3-draft-1.c
+  430  ./a.out
+  431  ls
+  432  cd projects/
+  433  cd lab3
+  434  ls
+  435  gcc -pthread -o a.out lab3-draft-1.c
+  436  .\a.out
+  437  ./a.out
+  438  gcc -pthread -o a.out lab3-draft-1.c
+  439  ./a.out
+  440  gcc -pthread -o a.out lab3-draft-1.c
+  441  ./a.out
+  442  gcc -pthread -o a.out lab3-draft-1.c
+  443  ./a.out
+  444  #include <pthread.h>
+  445  #include <stdio.h>
+  446  #include <sys/types.h>
+  447  #include <unistd.h>
+  448  #include <stdlib.h>
+  449  #define MAX_SAMPLE_SIZE 100
+  450  /* this data is shared by the thread(s) */
+  451  int num[MAX_SAMPLE_SIZE];
+  452  int sum, min, max, size;
+  453  float avg;
+  454  void * runner_sum(void * param); /* the thread  for the sum*/
+  455  void * runner_avg(void * param); /* the thread  for mean value */
+  456  void * runner_min(void * param); /* The thread for the minmum value */
+  457  void * runner_max(void * param); /* The thread for the maximum value */
+  458  int main(int argc, char * argv[]) {
+  459  }
+  460  void * runner_sum(void * param) {
+  461  }
+  462  void * runner_avg(void * param) {
+  463  }
+  464  void * runner_max(void * param) {
+  465  /*    int i, upper = atoi(param);
+  466  }
+  467  void * runner_min(void * param) {
+  468  }
+  469  mkdir eclipse
+  470  cd eclipse
+  471  version
+  472  linux
+  473  cat etc/issue
+  474  cat /etc/issue
+  475  sudo add apt-repository ppa:webupd8team/java
+  476  sudo add-apt-repository ppa:webupd8team/java
+  477  sudo apt-get update
+  478  sudo apt-get install oracle-java14-installer
+  479  sudo apt-get install oracle-java7-installer
+  480  sudo apt-get install oracle-java8-installer
+  481  sudo apt-get install oracle-java9-installer
+  482  sudo apt-get install oracle-java10-installer
+  483  sudo apt-get install oracle-java-installer
+  484  sudo apt-get install oracle-java11-installer
+  485  sudo apt-get install oracle-java12-installer
+  486  sudo apt-get install oracle-java13-installer
+  487  sudo apt-get install oracle-java14-installer
+  488  sudo apt-get install oracle-java15-installer
+  489  sudo apt-get install oracle-java6-installer
+  490  sudo apt-get install oracle-java7-installer
+  491  sudo apt-get install oracle-java8-installer
+  492  java -version
+  493  sudo apt install default-jre 
+  494  java -version
+  495  sudo apt-get install eclipse eclipse-cdt g++
+  496  sudo apt-get install eclipse-platform
+  497  cd eclipse
+  498  cd ..
+  499  cd projects/
+  500  cd ;ab3
+  501  cd lab3
+  502  ls
+  503  cd projects/
+  504  cd lab3
+  505  gcc -pthread lab3-draft-2.c
+  506  clear
+  507  gcc -pthread lab3-draft-2.c
+  508  clear
+  509  gcc -pthread lab3-draft-2.c
+  510  clear
+  511  gcc -pthread lab3-draft-2.c
+  512  clear
+  513  gcc -pthread lab3-draft-2.c
+  514  clear
+  515  gcc -pthread lab3-draft-2.c
+  516  rm a.out
+  517  ;s
+  518  ls
+  519  rm a.out
+  520  clear
+  521  gcc -pthread lab3-draft-2.c
+  522  ./a.out
+  523  gcc -pthread lab3-draft-2.c
+  524  ./a.out
+  525  clear
+  526  gcc -pthread lab3-draft-2.c
+  527  ./a.out
+  528  clear
+  529  ./a.out
+  530  clear
+  531  gcc -pthread lab3-draft-2.c
+  532  ./a.out
+  533  more lab3-draft-2.c
+  534  gcc -pthread lab3-draft-2.c
+  535  clear
+  536  ./a.out
+  537  gcc -pthread lab3-draft-2.c
+  538  clear
+  539  ./a.out
+  540  clear
+  541  ./a.out
+  542  clear
+  543  gcc -pthread lab3-draft-2.c
+  544  ./a.out
+  545  gcc -pthread lab3-draft-2.c
+  546  clear
+  547  gcc -pthread lab3-draft-2.c
+  548  clear
+  549  gcc -pthread lab3-draft-2.c
+  550  ./a.out
+  551  gcc -pthread lab3-draft-2.c
+  552  ./a.out
+  553  gcc -pthread lab3-draft-2.c
+  554  ./a.out
+  555  gcc -pthread lab3-draft-2.c
+  556  ./a.out
+  557  gcc -pthread lab3-draft-2.c
+  558  ./a.out
+  559  clear
+  560  ./a.out
+  561  gcc -pthread lab3-draft-2.c
+  562  clear
+  563  ./a.out
+  564  clear
+  565  gcc -pthread lab3-draft-2.c
+  566  clear
+  567  gcc -pthread lab3-draft-2.c
+  568  clear
+  569  gcc -pthread lab3-draft-2.c
+  570  clear
+  571  gcc -pthread lab3-draft-2.c
+  572  clear
+  573  gcc -pthread lab3-draft-2.c
+  574  clear
+  575  gcc -pthread lab3-draft-2.c
+  576  clear
+  577  gcc -pthread lab3-draft-2.c
+  578  clear
+  579  gcc -pthread lab3-draft-2.c
+  580  gcc -pthread -lm lab3-draft-2.c
+  581  gcc -lm -pthread  lab3-draft-2.c
+  582  clear
+  583  gcc -pthread lab3-draft-2.c -lm
+  584  ./a.out
+  585  gcc -pthread lab3-draft-2.c -lm
+  586  ./a.out
+  587  gcc -pthread lab3-draft-2.c -lm
+  588  ./a.out
+  589  gcc -pthread lab3-draft-2.c -lm
+  590  clear
+  591  gcc -pthread lab3-draft-2.c -lm
+  592  ./a.out
+  593  gcc -pthread lab3-draft-2.c -lm
+  594  ./a.out
+  595  gcc -pthread lab3-draft-2.c -lm
+  596  ./a.out
+  597  gcc -pthread lab3-draft-2.c -lm
+  598  ./a.out
+  599  gcc -pthread lab3-draft-2.c -lm
+  600  ./a.out
+  601  gcc -pthread lab3-draft-2.c -lm
+  602  ./a.out
+  603  gcc -pthread lab3-draft-2.c -lm
+  604  ./a.out
+  605  gcc -pthread lab3-draft-2.c -lm
+  606  ./a.out
+  607  clear
+  608  ./a.out
+  609  clear
+  610  ./a.out
+  611  clear
+  612  gcc -pthread lab3-draft-2.c -lm
+  613  ./a.out
+  614  gcc -pthread lab3-draft-2.c -lm
+  615  more lab3.c
+  616* 
+  617  gcc -pthread lab3-draft-2.c -lm
+  618  more lab3-draft-2.c
+  619  gcc -pthread lab3-draft-2.c -lm
+  620  ./a.out
+  621  history
+  622  history > history.txt
